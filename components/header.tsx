@@ -13,7 +13,23 @@ export function Header() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
       setMobileMenuOpen(false)
+      return
     }
+
+    // If the section isn't on this page (e.g., we're on /events/*), navigate to home with the hash
+    // and attempt to scroll after navigation. This keeps navigation working from nested pages.
+    const target = `/#${id}`
+    if (window.location.pathname !== "/") {
+      window.location.href = target
+      // After navigation the browser will jump to the hash; still close the mobile menu
+      setMobileMenuOpen(false)
+      return
+    }
+    // If already on home but element wasn't found, give it a moment and try again
+    setTimeout(() => {
+      const el = document.getElementById(id)
+      if (el) el.scrollIntoView({ behavior: "smooth" })
+    }, 200)
   }
 
   return (
@@ -21,11 +37,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">RBL</span>
-            </div>
-            <span className="text-lg font-bold hidden sm:inline">Road to Battle League</span>
-            <span className="text-lg font-bold sm:hidden">RBL</span>
+            <img src="/images/RBTL-logo.png" alt="Road to Battle League" className="h-10 w-auto object-contain" />
           </div>
 
           {/* Desktop Navigation */}
@@ -43,12 +55,6 @@ export function Header() {
               Events
             </button>
             <button
-              onClick={() => scrollToSection("news")}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              Hot News
-            </button>
-            <button
               onClick={() => scrollToSection("faq")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
@@ -62,10 +68,12 @@ export function Header() {
             </button>
           </nav>
 
-          <Button className="hidden md:flex font-bold" size="lg">
-            <DiscordIcon className="w-4 h-4 mr-2" />
-            Join Discord
-          </Button>
+          <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer">
+            <Button className="hidden md:flex font-bold" size="lg">
+              <DiscordIcon className="w-4 h-4 mr-2" />
+              Join Discord
+            </Button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -89,12 +97,6 @@ export function Header() {
               Events
             </button>
             <button
-              onClick={() => scrollToSection("news")}
-              className="text-foreground hover:text-primary transition-colors text-left"
-            >
-              Hot News
-            </button>
-            <button
               onClick={() => scrollToSection("faq")}
               className="text-foreground hover:text-primary transition-colors text-left"
             >
@@ -106,7 +108,9 @@ export function Header() {
             >
               Contact Us
             </button>
-            <Button className="w-full">Join Discord</Button>
+            <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer">
+              <Button className="w-full">Join Discord</Button>
+            </a>
           </nav>
         )}
       </div>

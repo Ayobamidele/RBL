@@ -22,10 +22,10 @@ export function Footer() {
             {/* Brand */}
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center">
-                  <Trophy className="w-6 h-6 text-muted-foreground" />
+                <div className="w-16 h-10 bg-muted rounded-lg flex items-center justify-center">
+                  {/* <Trophy className="w-6 h-6 text-muted-foreground" /> */}
+                  <img src="/images/RBTL-logo.png" alt="Road to Battle League" className="h-10 w-auto object-contain" />
                 </div>
-                <span className="text-xl font-bold text-muted-foreground">Road to Battle League</span>
               </div>
               <p className="text-muted-foreground/80 leading-relaxed">
                 The ultimate CODM tournament platform where players unite, compete, and conquer together.
@@ -46,11 +46,7 @@ export function Footer() {
                     Events
                   </a>
                 </li>
-                <li>
-                  <a href="#news" className="hover:text-muted-foreground transition-colors">
-                    News
-                  </a>
-                </li>
+                {/* News hidden from footer navigation */}
                 <li>
                   <a href="#faq" className="hover:text-muted-foreground transition-colors">
                     FAQ
@@ -64,7 +60,7 @@ export function Footer() {
               <h3 className="font-bold mb-4 text-muted-foreground">Community</h3>
               <ul className="space-y-2 text-muted-foreground/80">
                 <li>
-                  <a href="#" className="hover:text-muted-foreground transition-colors">
+                  <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors">
                     Discord
                   </a>
                 </li>
@@ -90,10 +86,10 @@ export function Footer() {
           <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground/70 text-sm">© 2025 Road to Battle League. All rights reserved.</p>
             <div className="flex gap-6 text-sm text-muted-foreground/70">
-              <a href="#" className="hover:text-muted-foreground transition-colors">
+              <a href="/privacy-policy" className="hover:text-muted-foreground transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-muted-foreground transition-colors">
+              <a href="/terms" className="hover:text-muted-foreground transition-colors">
                 Terms of Service
               </a>
             </div>

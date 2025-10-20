@@ -16,9 +16,11 @@ export default function Home() {
         <HeroSection />
         <EventSection />
         <LivestreamSection />
-        <HotNewsSection />
+        {/* Hot news is temporarily hidden from the homepage. To re-enable, change showHotNews to true */}
+        {false && <HotNewsSection />}
         <FAQSection />
-        <SponsorshipSection />
+        {/* Sponsorship temporarily hidden - set to true to show */}
+        {false && <SponsorshipSection />}
         <ContactSection />
       </main>
       <Footer />

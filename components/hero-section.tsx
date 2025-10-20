@@ -20,20 +20,11 @@ export function HeroSection() {
 
       <div className="container mx-auto relative z-10">
         <div className="max-w-6xl mx-auto text-center">
-          {/* Small Label Above Logo */}
-          <div className="mb-6">
-            <span className="text-sm uppercase tracking-wider text-muted-foreground font-semibold">
-              Call of Duty Mobile Tournament
-            </span>
-          </div>
+          {/* Small label removed as requested */}
 
-          {/* Logo Placeholder */}
+          {/* Logo removed from hero as requested */}
           <div className="mb-8 flex justify-center">
-            <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center shadow-2xl border-2 border-primary/20">
-              <span className="text-4xl font-bold text-primary-foreground">RBL</span>
-            </div>
           </div>
-
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 text-balance leading-[0.95] tracking-tight">
             Create Your Team And Win The Tournament Now
           </h1>
@@ -48,30 +39,32 @@ export function HeroSection() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button size="lg" className="text-lg px-10 py-7 font-bold">
-              <DiscordIcon className="w-5 h-5 mr-2" />
-              Join Our Discord
-            </Button>
+            <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="text-lg px-10 py-7 font-bold">
+                <DiscordIcon className="w-5 h-5 mr-2" />
+                Join Our Discord
+              </Button>
+            </a>
           </div>
 
           {/* Competition Info Cards */}
           <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-12">
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4">
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 text-center">
               <div className="text-sm text-muted-foreground mb-1">Tournament Status</div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 justify-center">
                 <div className="w-2 h-2 bg-accent rounded-full animate-pulse" />
                 <span className="font-bold text-accent">Active</span>
               </div>
             </div>
 
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4">
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 text-center">
               <div className="text-sm text-muted-foreground mb-1">Next Event</div>
-              <div className="font-bold">December 28, 2024</div>
+              <div className="font-bold">October 28, 2025</div>
             </div>
 
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4">
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 text-center">
               <div className="text-sm text-muted-foreground mb-1">Prize Pool</div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 justify-center">
                 <Trophy className="w-4 h-4 text-primary" />
                 <span className="font-bold text-primary">TBA</span>
               </div>

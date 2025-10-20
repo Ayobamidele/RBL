@@ -11,7 +11,7 @@ export default function AllNewsPage() {
       excerpt:
         "We're excited to announce the second season of Road to Battle League with enhanced features and bigger rewards for CODM players.",
       image: "/placeholder.svg?height=400&width=600",
-      date: "December 15, 2024",
+      date: "December 15, 2025",
       category: "Announcement",
     },
     {
@@ -20,7 +20,7 @@ export default function AllNewsPage() {
       excerpt:
         "Team Phoenix showcased exceptional skill and teamwork to claim victory in the RBL Preshow event, setting the stage for the main tournament.",
       image: "/placeholder.svg?height=400&width=600",
-      date: "October 28, 2024",
+      date: "October 28, 2025",
       category: "Results",
     },
     {
@@ -29,7 +29,7 @@ export default function AllNewsPage() {
       excerpt:
         "We're thrilled to welcome Tiffany to our moderation team. Learn more about how our moderators help create the best tournament experience.",
       image: "/placeholder.svg?height=400&width=600",
-      date: "October 20, 2024",
+      date: "October 20, 2025",
       category: "Community",
     },
     {
@@ -38,7 +38,7 @@ export default function AllNewsPage() {
       excerpt:
         "Recent updates to Call of Duty Mobile have shifted the competitive meta. Here's what RBL players need to know for upcoming tournaments.",
       image: "/placeholder.svg?height=400&width=600",
-      date: "October 10, 2024",
+      date: "October 10, 2025",
       category: "Strategy",
     },
     {
@@ -47,7 +47,7 @@ export default function AllNewsPage() {
       excerpt:
         "Road to Battle League is proud to announce our partnership with Bivy Studio, bringing enhanced production quality to all our events.",
       image: "/placeholder.svg?height=400&width=600",
-      date: "September 30, 2024",
+      date: "September 30, 2025",
       category: "Partnership",
     },
     {
@@ -56,7 +56,7 @@ export default function AllNewsPage() {
       excerpt:
         "Make sure your team is ready for RBL tournaments with these essential registration tips and Discord setup guidelines.",
       image: "/placeholder.svg?height=400&width=600",
-      date: "September 15, 2024",
+      date: "September 15, 2025",
       category: "Guide",
     },
   ]

@@ -9,7 +9,7 @@ import { notFound } from "next/navigation"
 const newsArticles: Record<string, any> = {
   "rbl-season-2-announcement": {
     title: "RBL Season 2 Announced - Bigger Prize Pool and More Teams",
-    date: "December 15, 2024",
+    date: "December 15, 2025",
     category: "Announcement",
     image: "/placeholder.svg?height=600&width=1200",
     content: `
@@ -26,13 +26,13 @@ const newsArticles: Record<string, any> = {
       </ul>
       
       <h2>Registration Details</h2>
-      <p>Registration for RBL Season 2 opens on December 1st, 2024. Make sure your team is ready by joining our Discord server and completing the verification process.</p>
+      <p>Registration for RBL Season 2 opens on December 1st, 2025. Make sure your team is ready by joining our Discord server and completing the verification process.</p>
       
       <h2>Important Dates</h2>
       <ul>
-        <li>Registration Opens: December 1, 2024</li>
-        <li>Registration Closes: December 20, 2024</li>
-        <li>Tournament Begins: December 28, 2024</li>
+        <li>Registration Opens: December 1, 2025</li>
+        <li>Registration Closes: December 20, 2025</li>
+        <li>Tournament Begins: December 28, 2025</li>
       </ul>
       
       <p>Join our Discord community today to stay updated and connect with other CODM players preparing for Season 2!</p>
@@ -40,7 +40,7 @@ const newsArticles: Record<string, any> = {
   },
   "team-phoenix-victory": {
     title: "Team Phoenix Dominates RBL Preshow Tournament",
-    date: "October 28, 2024",
+    date: "October 28, 2025",
     category: "Results",
     image: "/placeholder.svg?height=600&width=1200",
     content: `

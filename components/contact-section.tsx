@@ -18,8 +18,12 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
+    const to = "bivystudioesport@gmail.com"
+    const subject = encodeURIComponent(`Contact from ${formData.name}`)
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)
+    const mailto = `mailto:${to}?subject=${subject}&body=${body}`
+    // Open the user's mail client
+    window.location.href = mailto
   }
 
   return (
@@ -46,10 +50,12 @@ export function ContactSection() {
                     <p className="text-muted-foreground mb-4">
                       Join our Discord server for instant support and to connect with the RBL community.
                     </p>
-                    <Button className="w-full">
-                      <DiscordIcon className="w-5 h-5 mr-2" />
-                      Join Discord
-                    </Button>
+                    <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer">
+                      <Button className="w-full">
+                        <DiscordIcon className="w-5 h-5 mr-2" />
+                        Join Discord
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -62,8 +68,8 @@ export function ContactSection() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Email Support</h3>
                     <p className="text-muted-foreground">For business inquiries and support:</p>
-                    <a href="mailto:support@rbl.gg" className="text-primary hover:underline font-medium">
-                      support@rbl.gg
+                    <a href="mailto:bivystudioesport@gmail.com" className="text-primary hover:underline font-medium">
+                      bivystudioesport@gmail.com
                     </a>
                   </div>
                 </div>

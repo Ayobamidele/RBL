@@ -21,7 +21,7 @@ export function EventSection() {
                   <Calendar className="w-8 h-8 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm text-primary font-semibold mb-1">OCTOBER 24, 2024</div>
+                  <div className="text-sm text-primary font-semibold mb-1">OCTOBER 24, 2025</div>
                   <h3 className="text-2xl font-bold mb-2">Tournament Preshow</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Join us for a practice tournament event! Test your skills, meet other players, and prepare for the
@@ -43,10 +43,12 @@ export function EventSection() {
                     View Details
                   </Button>
                 </Link>
-                <Button className="flex-1" size="lg">
-                  <DiscordIcon className="w-5 h-5 mr-2" />
-                  Register
-                </Button>
+                <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer" className="flex-1">
+                  <Button className="w-full flex-1" size="lg">
+                    <DiscordIcon className="w-5 h-5 mr-2" />
+                    Register
+                  </Button>
+                </a>
               </div>
             </div>
 
@@ -60,7 +62,7 @@ export function EventSection() {
                   <Trophy className="w-8 h-8 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm text-primary font-semibold mb-1">DECEMBER 28, 2024</div>
+                  <div className="text-sm text-primary font-semibold mb-1">DECEMBER 28, 2025</div>
                   <h3 className="text-2xl font-bold mb-2">Grand Tournament</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     The ultimate CODM tournament is here! Compete with the best teams, showcase your skills, and claim
@@ -102,10 +104,12 @@ export function EventSection() {
               Preshow registration is now open! Join our Discord server to register your team or find teammates for the
               practice tournament. Our moderator Bami will guide you through the process.
             </p>
-            <Button size="lg" className="text-lg px-8">
-              <DiscordIcon className="w-5 h-5 mr-2" />
-              Join Discord Server Now
-            </Button>
+            <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="text-lg px-8">
+                <DiscordIcon className="w-5 h-5 mr-2" />
+                Join Discord Server Now
+              </Button>
+            </a>
           </div>
         </div>
       </div>

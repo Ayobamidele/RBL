@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, Trophy, Shield, Gamepad2, Lock, Network } from "lucide-react"
 import { DiscordIcon } from "@/components/icons/discord-icon"
+import Countdown from "@/components/countdown"
 import Link from "next/link"
 
 export default function GrandTournamentPage() {
@@ -28,21 +29,21 @@ export default function GrandTournamentPage() {
 
         {/* Hero Banner */}
         <div className="relative bg-gradient-to-br from-primary/20 via-background to-accent/20 border-y border-border">
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1920')] bg-cover bg-center opacity-10" />
+          <div className="absolute inset-0 bg-[url('/images/CODM_Map_Terminal.webp')] bg-cover bg-center opacity-30" />
           <div className="relative container mx-auto px-4 py-16">
             <div className="max-w-6xl mx-auto">
               <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
                 <div className="flex-1">
                   <div className="text-sm font-bold text-primary mb-2 tracking-wider">CALL OF DUTY MOBILE</div>
                   <h1 className="text-5xl lg:text-7xl font-black mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                    GRAND TOURNAMENT 2024
+                    GRAND TOURNAMENT 2025
                   </h1>
                   <div className="flex flex-wrap gap-4 mb-6">
                     <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-border">
                       <Calendar className="w-5 h-5 text-primary" />
                       <div>
                         <div className="text-xs text-muted-foreground">Date</div>
-                        <div className="font-bold">December 28, 2024</div>
+                        <div className="font-bold">December 28, 2025</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-border">
@@ -72,20 +73,7 @@ export default function GrandTournamentPage() {
                 </div>
                 <div className="lg:text-right">
                   <div className="text-sm text-muted-foreground mb-2">Registration opens in</div>
-                  <div className="flex gap-4 mb-6">
-                    <div className="text-center">
-                      <div className="text-4xl font-black text-primary">38</div>
-                      <div className="text-xs text-muted-foreground">DAYS</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-black text-primary">12</div>
-                      <div className="text-xs text-muted-foreground">HOURS</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-black text-primary">45</div>
-                      <div className="text-xs text-muted-foreground">MIN</div>
-                    </div>
-                  </div>
+                  <Countdown targetDate="2025-12-01T00:00:00Z" />
                   <Button size="lg" className="w-full lg:w-auto" disabled>
                     <Lock className="w-5 h-5 mr-2" />
                     Opens December 1st
@@ -207,7 +195,7 @@ export default function GrandTournamentPage() {
                   <h3 className="text-xl font-bold mb-4">Links</h3>
                   <div className="space-y-2">
                     <a
-                      href="#"
+                      href="https://discord.gg/YVVbjYGFcD"
                       className="flex items-center gap-2 text-primary hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"

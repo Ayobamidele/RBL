@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Users, Clock, Trophy, Shield, Gamepad2, Network } from "lucide-react"
 import { DiscordIcon } from "@/components/icons/discord-icon"
+import Countdown from "@/components/countdown"
 import Link from "next/link"
 
 export default function PreshowEventPage() {
@@ -28,7 +29,7 @@ export default function PreshowEventPage() {
 
         {/* Hero Banner */}
         <div className="relative bg-gradient-to-br from-primary/20 via-background to-accent/20 border-y border-border">
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1920')] bg-cover bg-center opacity-10" />
+          <div className="absolute inset-0 bg-[url('/images/TrainingFacility_Promo6_MWIII.webp')] bg-cover bg-center opacity-30" />
           <div className="relative container mx-auto px-4 py-16">
             <div className="max-w-6xl mx-auto">
               <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
@@ -42,7 +43,7 @@ export default function PreshowEventPage() {
                       <Calendar className="w-5 h-5 text-primary" />
                       <div>
                         <div className="text-xs text-muted-foreground">Date</div>
-                        <div className="font-bold">October 24, 2024</div>
+                        <div className="font-bold">October 24, 2025</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-border">
@@ -71,24 +72,13 @@ export default function PreshowEventPage() {
                 </div>
                 <div className="lg:text-right">
                   <div className="text-sm text-muted-foreground mb-2">Event starts in</div>
-                  <div className="flex gap-4 mb-6">
-                    <div className="text-center">
-                      <div className="text-4xl font-black text-primary">12</div>
-                      <div className="text-xs text-muted-foreground">DAYS</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-black text-primary">14</div>
-                      <div className="text-xs text-muted-foreground">HOURS</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-black text-primary">32</div>
-                      <div className="text-xs text-muted-foreground">MIN</div>
-                    </div>
-                  </div>
-                  <Button size="lg" className="w-full lg:w-auto">
-                    <DiscordIcon className="w-5 h-5 mr-2" />
-                    Register on Discord
-                  </Button>
+                  <Countdown targetDate="2025-10-24T18:00:00Z" />
+                  <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" className="w-full lg:w-auto">
+                      <DiscordIcon className="w-5 h-5 mr-2" />
+                      Register on Discord
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -99,7 +89,7 @@ export default function PreshowEventPage() {
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-6xl mx-auto">
             <div className="mb-8 flex justify-end">
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" disabled>
                 <Network className="w-5 h-5 mr-2" />
                 View Brackets
               </Button>
@@ -192,7 +182,7 @@ export default function PreshowEventPage() {
                   <h3 className="text-xl font-bold mb-4">Links</h3>
                   <div className="space-y-2">
                     <a
-                      href="#"
+                      href="https://discord.gg/YVVbjYGFcD"
                       className="flex items-center gap-2 text-primary hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
