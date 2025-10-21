@@ -4,18 +4,16 @@ import { DiscordIcon } from "@/components/icons/discord-icon"
 
 export function HeroSection() {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center pt-20 pb-20 px-4 overflow-hidden"
-    >
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 pb-20 px-4 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/images/header-RTDL-peakpx.jpg"
           alt="CODM Battle Scene"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/80 to-background/95" />
+        {/* Dark gradient overlay for better text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
       </div>
 
       <div className="container mx-auto relative z-10">
@@ -23,8 +21,8 @@ export function HeroSection() {
           {/* Small label removed as requested */}
 
           {/* Logo removed from hero as requested */}
-          <div className="mb-8 flex justify-center">
-          </div>
+          <div className="mb-8 flex justify-center"></div>
+
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 text-balance leading-[0.95] tracking-tight">
             Create Your Team And Win The Tournament Now
           </h1>
@@ -32,8 +30,7 @@ export function HeroSection() {
           {/* Description */}
           <div className="max-w-3xl mx-auto mb-12">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              RBL, the place where you can meet CODM players around the world, create a team, and win tournaments
-              together.
+              RBL, the place where you can meet CODM players around the world, create a team, and win tournaments together.
             </p>
             <p className="text-xl md:text-2xl font-bold text-foreground mb-4">What else? Create your team now!</p>
           </div>

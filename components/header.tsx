@@ -34,7 +34,12 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-xl border-b border-border/50">
-      <div className="container mx-auto px-4 py-4">
+      {/* Background image behind header content */}
+      <div className="absolute inset-0 pointer-events-none -z-10">
+        <div className="absolute inset-0 bg-[url('/images/header-RTDL-peakpx.jpg')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-background/60" />
+      </div>
+      <div className="container mx-auto px-4 py-4 relative z-10">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/images/RBTL-logo.png" alt="Road to Battle League" className="h-10 w-auto object-contain" />
