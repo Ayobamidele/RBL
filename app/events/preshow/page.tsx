@@ -148,7 +148,7 @@ export default function PreshowEventPage() {
                     The RBL Tournament Preshow is your chance to warm up before the main event! This practice tournament
                     allows teams to test their strategies, get familiar with the tournament format, and experience the
                     competitive atmosphere. While there are no prizes for this event, it's the perfect opportunity to
-                    prepare for the Grand Tournament in December. Join us on Discord to register your team and meet
+                    prepare for the Battle league Tournament in December. Join us on Discord to register your team and meet
                     other players from around the world!
                   </p>
                 </div>

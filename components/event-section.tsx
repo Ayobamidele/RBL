@@ -28,7 +28,7 @@ export function EventSection() {
                   <h3 className="text-2xl font-bold mb-2">Tournament Preshow</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Join us for a practice tournament event! Test your skills, meet other players, and prepare for the
-                    Grand Tournament. No prizes, just pure competition and fun.
+                    Battle league Tournament. No prizes, just pure competition and fun.
                   </p>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export function EventSection() {
                 </div>
                 <div>
                   <div className="text-sm text-primary font-semibold mb-1">DECEMBER 28, 2025</div>
-                  <h3 className="text-2xl font-bold mb-2">Grand Tournament</h3>
+                  <h3 className="text-2xl font-bold mb-2">Battle league Tournament</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     The ultimate CODM tournament is here! Compete with the best teams, showcase your skills, and claim
                     victory. Massive prizes await the champions!

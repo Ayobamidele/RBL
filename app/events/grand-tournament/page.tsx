@@ -10,7 +10,7 @@ import { RegistrationDialog } from "@/components/registration-dialog"
 import Countdown from "@/components/countdown"
 import Link from "next/link"
 
-export default function GrandTournamentPage() {
+export default function BattleLeagueTournamentPage() {
   return (
     <div className="min-h-screen">
       <Header />
@@ -26,7 +26,7 @@ export default function GrandTournamentPage() {
               Events
             </Link>
             <span>/</span>
-            <span className="text-foreground">Grand Tournament</span>
+            <span className="text-foreground">Battle league Tournament</span>
           </div>
         </div>
 
@@ -39,7 +39,7 @@ export default function GrandTournamentPage() {
                 <div className="flex-1">
                   <div className="text-sm font-bold text-primary mb-2 tracking-wider">CALL OF DUTY MOBILE</div>
                   <h1 className="text-5xl lg:text-7xl font-black mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                    GRAND TOURNAMENT 2025
+                    BATTLE LEAGUE TOURNAMENT 2025
                   </h1>
                   <div className="flex flex-wrap gap-4 mb-6">
                     <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-border">
@@ -147,7 +147,7 @@ export default function GrandTournamentPage() {
                 <div className="bg-card border border-border rounded-2xl p-6">
                   <h3 className="text-xl font-bold mb-4">About</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    The RBL Grand Tournament is the ultimate Call of Duty Mobile competition! This is where legends are
+                    The RBL Battle league Tournament is the ultimate Call of Duty Mobile competition! This is where legends are
                     made and champions are crowned. Compete against the best teams from around the world in an intense
                     single-elimination tournament format. With massive prizes on the line and glory awaiting the
                     victors, this is your chance to prove you're the best. Registration opens in December, so start

@@ -40,7 +40,7 @@ const newsArticles: Record<string, any> = {
   },
   "team-phoenix-victory": {
     title: "Team Phoenix Dominates RBL Preshow Tournament",
-    date: "October 28, 2025",
+    date: "October 24, 2025",
     category: "Results",
     image: "/placeholder.svg?height=600&width=1200",
     content: `

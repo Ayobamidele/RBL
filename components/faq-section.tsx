@@ -4,9 +4,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export function FAQSection() {
   const faqs = [
     {
-      question: "Is Torneo a trusted platform?",
+      question: "Is RBL a trusted platform?",
       answer:
-        "Yes, Road to Battle League is a trusted platform where you can search for tournaments both free and paid. In addition, Torneo also provides tournaments of various types of games.",
+        "Yes, Road to Battle League (RBL) is a trusted platform where you can search for tournaments both free and paid. In addition, RBL also provides tournaments for various types of games.",
     },
     {
       question: "How can I cash out the prize I got from the tournament?",

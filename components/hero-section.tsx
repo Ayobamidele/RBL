@@ -56,7 +56,7 @@ export function HeroSection() {
 
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 text-center">
               <div className="text-sm text-muted-foreground mb-1">Next Event</div>
-              <div className="font-bold">October 28, 2025</div>
+              <div className="font-bold">October 24, 2025</div>
             </div>
 
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 text-center">

@@ -24,10 +24,12 @@ export function LivestreamSection() {
               <p className="text-muted-foreground mb-6">
                 Subscribe for tournament highlights, player interviews, and full match replays
               </p>
-              <Button className="w-full bg-red-500 hover:bg-red-600">
-                <Youtube className="w-5 h-5 mr-2" />
-                Subscribe on YouTube
-              </Button>
+              <a href="https://www.youtube.com/@RoadToBattleLeague--" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-red-500 hover:bg-red-600">
+                  <Youtube className="w-5 h-5 mr-2" />
+                  Subscribe on YouTube
+                </Button>
+              </a>
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8 hover:border-primary transition-colors">
@@ -38,10 +40,12 @@ export function LivestreamSection() {
               <p className="text-muted-foreground mb-6">
                 Follow for live tournament streams, real-time commentary, and community chat
               </p>
-              <Button className="w-full bg-purple-500 hover:bg-purple-600">
-                <Twitch className="w-5 h-5 mr-2" />
-                Follow on Twitch
-              </Button>
+              <a href="https://www.twitch.tv/bivystudioesport" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-purple-500 hover:bg-purple-600">
+                  <Twitch className="w-5 h-5 mr-2" />
+                  Follow on Twitch
+                </Button>
+              </a>
             </div>
           </div>
 

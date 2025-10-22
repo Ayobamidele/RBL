@@ -70,12 +70,12 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-muted-foreground transition-colors">
+                  <a href="https://www.youtube.com/@RoadToBattleLeague--" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors">
                     YouTube
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-muted-foreground transition-colors">
+                  <a href="https://www.twitch.tv/bivystudioesport" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors">
                     Twitch
                   </a>
                 </li>

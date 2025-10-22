@@ -20,7 +20,7 @@ export default function AllNewsPage() {
       excerpt:
         "Team Phoenix showcased exceptional skill and teamwork to claim victory in the RBL Preshow event, setting the stage for the main tournament.",
       image: "/placeholder.svg?height=400&width=600",
-      date: "October 28, 2025",
+      date: "October 24, 2025",
       category: "Results",
     },
     {
