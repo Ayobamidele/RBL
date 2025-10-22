@@ -24,7 +24,7 @@ export function LivestreamSection() {
               <p className="text-muted-foreground mb-6">
                 Subscribe for tournament highlights, player interviews, and full match replays
               </p>
-              <a href="https://www.youtube.com/@RoadToBattleLeague--" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@RoadToBattleLeague" target="_blank" rel="noopener noreferrer">
                 <Button className="w-full bg-red-500 hover:bg-red-600">
                   <Youtube className="w-5 h-5 mr-2" />
                   Subscribe on YouTube
