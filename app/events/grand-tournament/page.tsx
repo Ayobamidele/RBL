@@ -1,9 +1,12 @@
+'use client'
+
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, Trophy, Shield, Gamepad2, Lock, Network } from "lucide-react"
 import { DiscordIcon } from "@/components/icons/discord-icon"
+import { RegistrationDialog } from "@/components/registration-dialog"
 import Countdown from "@/components/countdown"
 import Link from "next/link"
 
@@ -74,10 +77,22 @@ export default function GrandTournamentPage() {
                 <div className="lg:text-right">
                   <div className="text-sm text-muted-foreground mb-2">Registration opens in</div>
                   <Countdown targetDate="2025-12-01T00:00:00Z" />
-                  <Button size="lg" className="w-full lg:w-auto" disabled>
-                    <Lock className="w-5 h-5 mr-2" />
-                    Opens December 1st
-                  </Button>
+                  <div className="flex flex-col gap-3">
+                    <RegistrationDialog
+                      trigger={
+                        <Button size="lg" className="w-full lg:w-auto" disabled>
+                          <Lock className="w-5 h-5 mr-2" />
+                          Opens December 1st
+                        </Button>
+                      }
+                    />
+                    <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer" className="w-full">
+                      <Button size="lg" variant="outline" className="w-full lg:w-auto">
+                        <DiscordIcon className="w-5 h-5 mr-2" />
+                        Join Discord
+                      </Button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

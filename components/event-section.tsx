@@ -1,6 +1,9 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { Calendar, Trophy, Lock } from "lucide-react"
 import { DiscordIcon } from "@/components/icons/discord-icon"
+import { RegistrationDialog } from "@/components/registration-dialog"
 import Link from "next/link"
 
 export function EventSection() {
@@ -43,12 +46,14 @@ export function EventSection() {
                     View Details
                   </Button>
                 </Link>
-                <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer" className="flex-1">
-                  <Button className="w-full flex-1" size="lg">
-                    <DiscordIcon className="w-5 h-5 mr-2" />
-                    Register
-                  </Button>
-                </a>
+                <RegistrationDialog
+                  trigger={
+                    <Button className="w-full flex-1" size="lg">
+                      <DiscordIcon className="w-5 h-5 mr-2" />
+                      Register
+                    </Button>
+                  }
+                />
               </div>
             </div>
 
@@ -101,15 +106,17 @@ export function EventSection() {
               <h3 className="text-2xl font-bold">Ready for the Preshow?</h3>
             </div>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Preshow registration is now open! Join our Discord server to register your team or find teammates for the
-              practice tournament. Our moderator Bami will guide you through the process.
+              Preshow registration is now open! Register for the event and then join our Discord server to connect with your team and other players.
+              Our moderator Bami will guide you through the process.
             </p>
-            <a href="https://discord.gg/YVVbjYGFcD" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="text-lg px-8">
-                <DiscordIcon className="w-5 h-5 mr-2" />
-                Join Discord Server Now
-              </Button>
-            </a>
+            <RegistrationDialog
+              trigger={
+                <Button size="lg" className="text-lg px-8">
+                  <Trophy className="w-5 h-5 mr-2" />
+                  Register Now
+                </Button>
+              }
+            />
           </div>
         </div>
       </div>
